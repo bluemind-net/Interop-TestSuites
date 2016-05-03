@@ -218,8 +218,10 @@ namespace Microsoft.Protocols.TestSuites.Common
                 // Add headers to get MAPIHTTP url                        
                 if (getMAPIURL)
                 {
+                    request.Credentials = new NetworkCredential(userName + "@" + domain, "dontcare"); 
                     request.Headers.Add("X-MapiHttpCapability", "2");
                     request.Headers.Add("X-AnchorMailbox", userName + "@" + domain);
+                    request.Headers.Add("X-User-Identity", userName + "@" + domain);
                 }
 
                 byte[] buffer = Encoding.UTF8.GetBytes(requestXml);
