@@ -8,11 +8,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <!-- System under test (SUT) section begins. When setting the values of properties in this section, ensure that the values match the SUT settings and configuration. -->
       <!-- The AdminUserName property specifies a username which can be used by a client to access the mailbox. The user corresponding to the username should have the required permissions to perform administrative tasks. -->
-      <Property name="AdminUserName" value="MSOXCMAPIHTTP_User01" />
+      <Property name="AdminUserName" value="tom" />
       <!-- The AdminUserPassword property specifies the password for the user specified in the AdminUserName property. The property value is case-sensitive. -->
       <Property name="AdminUserPassword" value="Password01!" />
       <!-- The AdminUserEssdn property is a string that contains the distinguished name (DN) of the user specified in the AdminUserName property. On the Windows platform, the value of the AdminUserEssdn property is the same as the value in the legacyExchangeDN property on the Exchange server. -->
-      <Property name="AdminUserEssdn" value="/o=CONTOSO/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=MSOXCMAPIHTTP_User01" />
+      <Property name="AdminUserEssdn" value="/o=MAPI Dev/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=54c1b13815aa4c8baabee431a272cde0-Thomas Cataldo" />
       <!-- The GeneralUserName property specifies a username which can be used by a client to access the mailbox. The property value should have the same prefix as the value in the AdminUserName property. -->
       <Property name="GeneralUserName" value="MSOXCMAPIHTTP_User02" />
       <!-- The GeneralUserEssdn property is a string that contains the distinguished name (DN) of the user specified in the GeneralUserName property. On the Windows platform, the value of the GeneralUserEssdn property is the same as the value in the legacyExchangeDN property on the Exchange server. -->

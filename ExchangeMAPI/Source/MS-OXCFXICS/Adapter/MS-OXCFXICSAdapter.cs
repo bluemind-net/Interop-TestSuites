@@ -5103,7 +5103,7 @@ namespace Microsoft.Protocols.TestSuites.MS_OXCFXICS
         private void RevertPublicFolder(LogonFlags logonFlags)
         {
             int logonHandleIndex, inboxFolderIndex;
-
+            return;
             // Reconnect the server
             bool resultDisconnect = this.oxcropsClient[1].Disconnect();
             Site.Assert.IsTrue(resultDisconnect, "Disconnecting server should be successful.");
